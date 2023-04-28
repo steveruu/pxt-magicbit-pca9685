@@ -200,10 +200,10 @@ namespace PCAmotor {
         }
         speed = speed * 16; // map 255 to 4096
         // if (speed >= 4096) {
-        //     speed = speed;
+        //     speed = 4095;
         // }
         // if (speed <= -4096) {
-        //     speed = speed;
+        //     speed = -4095;
         // }
         if (index > 4 || index <= 0)
             return
