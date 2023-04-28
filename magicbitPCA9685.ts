@@ -193,7 +193,6 @@ namespace PCAmotor {
 
     //% blockId=magicbit_motor_run block="Motor|%index|speed %speed"
     //% weight=85
-    //% speed.min=-255 speed.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function MotorRun(index: Motors, speed: number): void {
         if (!initialized) {
