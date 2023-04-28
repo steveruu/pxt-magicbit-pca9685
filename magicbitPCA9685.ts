@@ -198,7 +198,7 @@ namespace PCAmotor {
         if (!initialized) {
             initPCA9685()
         }
-        speed = speed * 20; // map 255 to 4096
+        speed = speed * 16; // map 255 to 4096
         // if (speed >= 4096) {
         //     speed = speed;
         // }
