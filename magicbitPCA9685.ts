@@ -88,7 +88,7 @@ namespace PCAmotor {
 
     function initPCA9685(): void {
         i2cwrite(PCA9685_ADDRESS, MODE1, 0x00)
-        setFreq(25);
+        setFreq(50);
         for (let idx = 0; idx < 16; idx++) {
             setPwm(idx, 0, 0);
         }
@@ -198,7 +198,7 @@ namespace PCAmotor {
         if (!initialized) {
             initPCA9685()
         }
-        speed = speed * 16; // map 255 to 4096
+        speed = speed * 20; // map 255 to 4096
         // if (speed >= 4096) {
         //     speed = speed;
         // }
